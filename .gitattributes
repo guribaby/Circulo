@@ -1,2 +1,24 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+package Cuadrado;
+
+public class Cir {
+
+	public double radio;
+	public double pi;
+	
+	public Cir() {
+		radio= 176232;
+		pi= 3.14;
+	}
+	public double calcularCircunferencia () {
+		return 2*pi*radio;
+	}
+	public double calcularArea () {
+		return pi*Math.pow(radio,2);
+	}
+	public void cambiarRadio(int r) {
+		radio= r;
+	}
+	public void cambiarPi(int p) {
+		pi= p;
+	}
+}
